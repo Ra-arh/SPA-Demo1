@@ -1,0 +1,73 @@
+.testmonial-container{
+    background-image: url(../../Assets/wall-wallpaper-concrete-colored-painted-textured-concept.jpg);
+    font-family: sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.testmonial-title{
+    display: flex;
+    justify-content: center;
+}
+
+.testmonial-title>h2{
+    color: #fff;
+    text-decoration: underline;
+
+}
+
+.testmonial-subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.testmonial-subtitle>p{
+    color: #fff;
+}
+
+.testmonial-sliderdesc{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 150px;
+}
+
+.testmonial-slideruser{
+    display: flex;
+    justify-content: center;
+}
+
+.testmonial-sliderprofile{
+    display: flex;
+    justify-content: center;
+}
+
+
+.testmonial-sliderdesc>p{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.testmonial-slideruser>h3{
+    color: #fff;
+    font-weight: 300;
+}
+
+.testmonial-sliderprofile>h6{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.testimonial-slider{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-sliderwidth{
+    width: 80%;
+}
+

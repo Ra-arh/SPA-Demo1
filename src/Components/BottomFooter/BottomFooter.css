@@ -1,0 +1,22 @@
+.btfooter-container{
+    background-color: #f9f7f7;
+    font-family: sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.btfooter-container>p{
+    font-size: 14px;
+}
+
+.font{
+    color: blueviolet;
+}
+
+.heart{
+    font-size:150%;
+    color:red;
+}

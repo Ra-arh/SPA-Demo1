@@ -1,0 +1,74 @@
+.about-container{
+    background-color: #f8f4f4;
+    font-family: sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.about-title{
+    display: flex;
+    justify-content: center;
+}
+
+.about-title>h2{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.sub-title{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    color: rgb(74, 75, 71);
+    font-size: 16px;
+}
+
+.about-details{
+    display: flex;
+    justify-content: center;
+    margin: 0px 100px;
+}
+
+.about-content{
+    margin: 50px 0px;
+}
+
+.about-content>h2{
+    color: rgb(74, 75, 71);
+}
+
+.about-content>p{
+    margin: 20px 0px;
+}
+
+.about-points>p{
+    display: inline;
+    margin: 0px 20px;
+    font-size: 16px;
+}
+
+.about-points>img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-top: 10px;
+}
+
+.about-img{
+    position: relative;
+    animation: myfirst 4s infinite;
+    animation-direction: reverse;    
+}
+
+
+@keyframes myfirst {
+    0%   {background: left= 0px; bottom: 0px;}
+    25%  {background: left= 0px; bottom: 0px;}
+    50%  {background: left= 0px; bottom: 15px;}
+    75%  {background: left= 0px; bottom: 0px;}
+    100% {background: left= 0px; bottom: 0px;}
+  }

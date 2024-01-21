@@ -1,0 +1,66 @@
+.nav{
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    gap: 0px;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    margin: 30px 120px;
+    color: white;
+}
+
+
+.nav-logo{
+    font-family: Outfit;
+    position: absolute;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 25px;
+}
+
+.nav-menu li:hover{
+    color: black;
+    text-underline-offset: 2px;
+    border-radius: 4px;
+    transition:all 0.2s ease-in-out;
+    background-color: #f3dddd;
+}
+
+
+.nav-logout{
+    border-radius: 10px;
+    padding: 5px 15px;
+    background: rgb(7, 7, 68);
+    color: #262626;
+}
+
+.nav-logout>img{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+}
+
+
+.nav-setting{
+    border-radius: 10px;
+    padding: 5px 15px;
+    background: rgb(7, 7, 68);
+    color: #262626;
+}
+
+
+.nav-setting>img{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+}
+

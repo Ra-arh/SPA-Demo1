@@ -1,0 +1,93 @@
+.faq-container{
+    background-color: #f9f7f7;
+    font-family: sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.faq-title{
+    display: flex;
+    justify-content: center;
+}
+
+.faq-title>h2{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.faq-subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.faq-titlecontent{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    margin: 5px 0px;
+    color: rgb(74, 75, 71);    
+}
+
+p{
+    color: rgb(74, 75, 71);
+    font-size: 16px;
+}
+
+.wrapper{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordian{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.item{
+    background: #f9dfdf;
+    width: 40%;
+    border-radius: 5px;
+    border: 0.1px turquoise solid;
+}
+
+.accodian-title{
+    padding: 5px 20px;
+    color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accodian-title>p{
+    color: blueviolet;
+    font-size: 13px;
+}
+
+.accodian-desc{
+    background-color: #faf5f5;
+    padding: 0px 20px;
+    color: #8b7f75;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.accodian-desc>p{
+    font-size: 13px;
+}
+
+.accodian-desc.show{
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+

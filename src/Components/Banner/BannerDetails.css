@@ -1,0 +1,77 @@
+.banner{
+    margin: 0px 120px;
+    margin-top: 200px;
+}
+
+.banner-text{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 1.5;
+}
+
+.banner-text p{
+    color: #fff;
+}
+
+.banner-explore{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: fit-content;
+    margin-top: 3rem;
+    padding: 5px 8px;
+    padding-left: 30px;
+    border-radius: 60px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.banner-explore p{
+    color: #292929;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner-dot-play{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-dots{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    list-style: none;
+}
+
+.banner-dot{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+
+.banner-dot.orange{
+    background: orangered;
+}
+
+.banner-play{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.banner-play p{
+    color: #fff;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .banner-dot{
+        display: none;
+    }
+}

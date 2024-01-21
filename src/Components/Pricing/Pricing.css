@@ -1,0 +1,97 @@
+.pricing-container{
+    background-color: #f9e6e6;
+    font-family: sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.pricing-title{
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-title>h2{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.pricing-subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.pcard-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.p-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightblue;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding: 50px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.pcard-title{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.pcard-title img{
+    width: 20px;
+    height: 20px;
+}
+
+.pcard-title h4{
+    font-weight: 100;
+    font-size: larger;
+    color: blueviolet;
+}
+
+.pcard-titlebg{
+    background-color: rgb(221, 199, 241);
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    border-radius: 50%;
+}
+
+.spantag{
+    font-size: 40px;
+}
+
+.p-button button{
+    width: 100%;
+    background-color: white;
+    border: 1px solid blueviolet;
+    color: black;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.p-button button:hover{
+    color: greenyellow;
+}
+
+.p-feature{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-feature img{
+    width: 15px;
+    height: 15px;
+}
+
+.p-card p{
+    font-size: 12px;
+}
