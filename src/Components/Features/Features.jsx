@@ -1,4 +1,4 @@
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 import './Feature.css'
 import { useState } from 'react'
 import Code_review from "../../Assets/code-review.png"
