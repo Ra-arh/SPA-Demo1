@@ -21,6 +21,7 @@ export default function Pricing() {
         },
         {
             // img: {},
+            isPremium: true,
             title: "Premium",
             price: "$15",
             duration: "month",

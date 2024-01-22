@@ -5,7 +5,7 @@
     justify-content: end;
     align-items: center;
     text-align: center;
-    margin: 30px 120px;
+    margin: 20px 120px;
     color: white;
 }
 
@@ -64,3 +64,14 @@
     padding: 5px 0px 5px 0px;
 }
 
+@media only screen and (max-width: 992px) {
+    .nav-menu li{
+        display: none;
+    }
+
+
+    .nav-logo{
+        display: none;
+    }
+    
+}

@@ -5,11 +5,11 @@
     justify-content: center;
     width: 100%;
     margin: auto;
-    
 }
 
 .newsletter{
     margin: 50px 0px;
+    padding: 0px 30px;
 }
 
 .newstitle{
@@ -37,7 +37,7 @@
 
 .enquiry>input{
     height: 50px;
-    width: 550px;
+    width: 55%;
     padding: 0px 20px;
     border: none;
     border-radius: 5px 0px 0px 5px;
@@ -45,11 +45,14 @@
 
 .enquiry>button{
     background-color: blueviolet;
-    width: 15%;
+    /* width: 15%; */
     font-size: 15px;
     color: white;
     border: none;
     border-radius: 0px 5px 5px 0px;
     margin-top: 0px;
     height: 50px;
+    padding: 0px 40px;
 }
+
+

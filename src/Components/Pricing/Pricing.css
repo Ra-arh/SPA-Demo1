@@ -9,6 +9,7 @@
 .pricing-title{
     display: flex;
     justify-content: center;
+    padding: 0PX 20PX;
 }
 
 .pricing-title>h2{
@@ -19,12 +20,16 @@
 .pricing-subtitle{
     display: flex;
     justify-content: center;
+    padding: 0px 20px;
 }
 
 .pcard-container{
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
+    font-family: sans-serif;
+    width: 95%;
+    margin: auto;
 }
 
 .p-card{
@@ -94,4 +99,24 @@
 
 .p-card p{
     font-size: 12px;
+}
+
+@media only screen and (max-width: 785px) {
+    .pcard-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    
+    .p-card{
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .p-card{
+        width: 60%;
+    }
 }

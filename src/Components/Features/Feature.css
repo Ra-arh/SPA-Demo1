@@ -24,6 +24,7 @@
 .feature-titlecontent{
     display: flex;
     justify-content: center;
+    padding: 0px 25px;
 }
 
 h3{
@@ -31,7 +32,7 @@ h3{
     color: rgb(74, 75, 71);    
 }
 
-p{
+.feature-titlecontent p{
     color: rgb(74, 75, 71);
     font-size: 16px;
 }
@@ -59,7 +60,7 @@ p{
 
 
 .feature-card{
-    max-width: calc(28% - 20px);
+    width: 27%;
     border: 1px solid transparent;
     background-color: #f8f4f4;
     border-radius: 10px;
@@ -82,4 +83,17 @@ p{
 .feature-card>h3{
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .feature-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .feature-card{
+        width: 70%;
+    }
 }

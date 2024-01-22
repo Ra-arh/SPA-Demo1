@@ -19,11 +19,13 @@
 .faq-subtitle{
     display: flex;
     justify-content: center;
+    padding: 0px 30px;
 }
 
 .faq-titlecontent{
     display: flex;
     justify-content: center;
+    padding: 0px 20px;
 }
 
 h3{
@@ -91,3 +93,9 @@ p{
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 
+@media only screen and (max-width: 992px) {
+    .item{
+        width: 80%;
+    }
+        
+}

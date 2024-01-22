@@ -20,6 +20,7 @@
 .testmonial-subtitle{
     display: flex;
     justify-content: center;
+    padding: 0px 20px;
 }
 
 .testmonial-subtitle>p{
@@ -69,5 +70,13 @@
 
 .testimonial-sliderwidth{
     width: 80%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .testmonial-sliderdesc{
+        margin: 0px 40px;
+    }
+    
 }
 
