@@ -1,4 +1,3 @@
-// import { connect } from 'react-redux'
 import './Feature.css'
 import { useState } from 'react'
 import Code_review from "../../Assets/code-review.png"
@@ -6,32 +5,32 @@ import Code_review from "../../Assets/code-review.png"
 export default function Features() {
   const [featureList] = useState([
     {
-      img: {Code_review},
+      img: Code_review,
       title: "Unique Design", 
       description: "Azea has a unique design that you cannot compare with any other templates. It has unique Design",
     },
     {
-      img: {Code_review},
+      img: Code_review,
       title: "Unique Design", 
       description: "Azea has a unique design that you cannot compare with any other templates. It has unique Design",
     },
     {
-      img: {Code_review},
+      img: Code_review,
       title: "Unique Design", 
       description: "Azea has a unique design that you cannot compare with any other templates. It has unique Design",
     },
     {
-      img: {Code_review},
+      img: Code_review,
       title: "Unique Design", 
       description: "Azea has a unique design that you cannot compare with any other templates. It has unique Design",
     },
     {
-      img: {Code_review},
+      img: Code_review,
       title: "Unique Design", 
       description: "Azea has a unique design that you cannot compare with any other templates. It has unique Design",
     },
     {
-      img: {Code_review},
+      img: Code_review,
       title: "Unique Design", 
       description: "Azea has a unique design that you cannot compare with any other templates. It has unique Design",
     }
@@ -53,7 +52,7 @@ export default function Features() {
           {featureList.map((feature, i)=> (
             <div key={i} className="feature-card">
               <div className="feature-card-icon">
-                <img src={Code_review} alt="code" />
+                <img src={feature.img} alt="code" />
               </div>
               <h3>{feature.title}</h3>
               <p>{feature.description}</p>

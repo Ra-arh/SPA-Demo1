@@ -1,12 +1,15 @@
 import './Pricing.css';
-import pTypeIcon from '../../Assets/premium.png'; 
+import pPremiun from '../../Assets/premium.png'; 
+import pBasic from '../../Assets/basic-package.png'; 
+import pPersonal from '../../Assets/personal-package.png'; 
 import pTrue from '../../Assets/true.png';
 import { useState } from 'react';
+import crown from '../../Assets/crown.png';
 
 export default function Pricing() {
     const [pricingFeatures] = useState([
         {
-            // img: {},
+            img: pPersonal,
             title: "Personal",
             price: "$13",
             duration: "month",
@@ -20,7 +23,7 @@ export default function Pricing() {
             feature6: "24/7 support",
         },
         {
-            // img: {},
+            img: pPremiun,
             isPremium: true,
             title: "Premium",
             price: "$15",
@@ -35,7 +38,7 @@ export default function Pricing() {
             feature6: "24/7 support",
         },
         {
-            // img: {},
+            img: pBasic,
             title: "Basic",
             price: "$12",
             duration: "month",
@@ -63,12 +66,16 @@ export default function Pricing() {
     </div>
     <div className='pcard-container'>
     {pricingFeatures.map((pFeature, i) => (     
-    <div className='p-card'>
-        <div className='pcard-title'>
+    // <div className='p-card' {pFeature.isPremium ? 'accodian-desc show': 'accodian-desc'}>
+    <div className={pFeature.isPremium ? 'p-card preminumCard': 'p-card'}>
+     <div className='pcard-title'>
             <div className='pcard-titlebg'>
-                <img src={pTypeIcon} alt="icon" />
+                <img src={pFeature.img} alt="icon" />
             </div>
             <h4>{pFeature.title}</h4>
+            <div className='paid-pricing'>
+                {pFeature.isPremium && <img src={crown} alt="pain" />}
+            </div>
         </div>
         <div>
             <p><span className='spantag'>{pFeature.price}</span>/ {pFeature.duration}</p>

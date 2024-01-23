@@ -1,18 +1,15 @@
 .nav{
-    display: grid;
-    grid-template-columns: repeat(10, auto);
-    gap: 0px;
-    justify-content: end;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    margin: 20px 120px;
+    margin: 25px 120px;
     color: white;
 }
 
-
 .nav-logo{
     font-family: Outfit;
-    position: absolute;
+    font-size: 42px;
+    font-weight: 500;
 }
 
 .nav-menu{
@@ -20,21 +17,12 @@
     align-items: center;
     list-style: none;
     font-size: 18px;
-    gap: 25px;
+    gap: 30px;
 }
-
-.nav-menu li:hover{
-    color: black;
-    text-underline-offset: 2px;
-    border-radius: 4px;
-    transition:all 0.2s ease-in-out;
-    background-color: #f3dddd;
-}
-
 
 .nav-logout{
     border-radius: 10px;
-    padding: 5px 15px;
+    padding: 5px 38px;
     background: rgb(7, 7, 68);
     color: #262626;
 }
@@ -47,10 +35,9 @@
     padding: 5px 0px 5px 0px;
 }
 
-
 .nav-setting{
     border-radius: 10px;
-    padding: 5px 15px;
+    padding: 5px 38px;
     background: rgb(7, 7, 68);
     color: #262626;
 }
@@ -64,14 +51,95 @@
     padding: 5px 0px 5px 0px;
 }
 
-@media only screen and (max-width: 992px) {
-    .nav-menu li{
-        display: none;
+.nav-menu li:hover{
+    color: black;
+    text-underline-offset: 2px;
+    border-radius: 4px;
+    transition:all 0.2s ease-in-out;
+    background-color: #f3dddd;
+}
+
+.nav-button{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(250, 249, 249);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+.nav-closebutton{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .nav-menu{
+        gap: 20px;
     }
 
-
-    .nav-logo{
-        display: none;
+    .nav-menu li{
+        margin: 0 0.0rem;
     }
     
+    .nav-logout{
+        padding: 15px 15px;
+    }
+    
+    .nav-setting{
+        padding: 15px 15px;
+    }
 }
+
+@media only screen and (max-width: 1024px) {
+    .nav-button{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    ul{
+        position: fixed;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: rgb(226, 228, 230);
+        color: black;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+
+    .responsive_nav{
+        transform: none;
+    }
+
+    .nav-closebutton{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    li{
+        font-size: 1.1rem;
+    }
+
+    .nav-logo img{
+        position: relative;
+        right: 70px;
+    }
+
+    .display-close{
+        display: none;
+    }
+} 

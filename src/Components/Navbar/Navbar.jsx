@@ -1,17 +1,23 @@
 import './Navbar.css';
-import logo from '../../Assets/Logo.svg'
-import logout from '../../Assets/logout.png'
-import setting from '../../Assets/cogwheel.png'
-
+import logo from '../../Assets/Logo.svg';
+import logout from '../../Assets/logout.png';
+import setting from '../../Assets/cogwheel.png';
+import {FaBars, FaTimes} from 'react-icons/fa';
+import { useRef } from 'react';
 
 export const Navbar = () => {
+  const navRef = useRef();
+
+  const showNavBar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  }
+
   return (
-    <div className='nav'>
-      {/* <div className='nav-logo'>Logo</div> */}
+      <div className='nav'>
       <div className='nav-logo'>
         <img src={logo} alt="logo" />
       </div>
-      <ul className='nav-menu'>
+      <ul className='nav-menu' ref={navRef}>
         <li>Home</li>
         <li>Abouts</li>
         <li>Features</li>
@@ -25,7 +31,13 @@ export const Navbar = () => {
         <li className='nav-setting'>
         <img src={setting} alt="Setting" />
         </li>
-      </ul>
+        <button className='nav-button nav-closebutton' onClick={showNavBar}>
+          <FaTimes/>
+        </button>
+        </ul>
+       <button className='nav-button nav-closebutton' onClick={showNavBar}>
+         <FaBars/>  
+       </button>
     </div>
   )
 }
