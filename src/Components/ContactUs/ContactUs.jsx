@@ -15,11 +15,11 @@ export default function ContactUs() {
     <form action="">
         <label htmlFor="name">First name*</label>
         <br />
-        <input type="text" placeholder='First name'/>
+        <input className='input-width40' type="text" placeholder='First name'/>
         <br /><br />
         <label htmlFor="name">Last name</label>
         <br />
-        <input type="text" placeholder='Last name'/>
+        <input className='input-width40' type="text" placeholder='Last name'/>
         <br /><br />
         <label htmlFor="Email">Email*</label>
         <br />
